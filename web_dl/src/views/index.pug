@@ -1,0 +1,17 @@
+extends templates/head
+block main
+  include templates/header
+
+  div.album
+    - var n = 1;
+    while n <= 12
+      div.card
+        div.card__container(data-type)
+          img(src=`./assets/img/thumbs/thumb-${n}.png` alt="" data-img data-link).card__img
+          //- a(href="#").card__share: img(src="./assets/img/share.svg" alt="" )
+        //- p.card__price(data-price) $35.00
+        a(href="#").card__button-buy Ver más
+        - n++
+
+  include templates/footer
+  script(src="js/main.js")
