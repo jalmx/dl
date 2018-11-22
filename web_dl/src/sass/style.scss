@@ -40,6 +40,10 @@
     z-index: 10;
 }
 
+.logo__link{
+    text-decoration: none;
+    color: var(--font-menu-color);
+}
 .nav {
     position: relative;
     z-index: 100;

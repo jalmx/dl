@@ -12,12 +12,13 @@
     <meta name="msapplication-TileColor" content="#ffffff"/>
     <meta name="theme-color" content="#FF7BAC"/>
     <link rel="stylesheet" href="/css/style.css"/>
+    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; media-src *; script-src 'self' 'unsafe-inline'  "/>
     <title>Diana Love Shop | Diana Love</title>
   </head>
   <body>
     <div class="container_menu">
       <nav class="nav">
-        <div class="logo nav__logo">Diana Love</div>
+        <div class="logo nav__logo"><a class="logo__link" href="index.html">Diana Love</a></div>
         <div class="nav__button_menu icon-menu" id="menu"></div>
         <ul class="nav__menu">
           <li class="menu__item back" id="back"><a class="menu__link icon-back" href="#"></a></li>
@@ -70,6 +71,7 @@
         <div class="card__container" data-type="data-type"><img class="card__img" src="./assets/img/thumbs/thumb-12.png" alt="" data-img="data-img" data-link="data-link"/></div><a class="card__button-buy" href="#">Ver más</a>
       </div>
     </div>
+    <h1 class="mesanje" id="mensaje">mensaje</h1><a href="/mensaje">Mensaje</a>
     <footer class="footer">
       <p class="footer__phrase">Contactanos</p>
       <div class="footer__container">
